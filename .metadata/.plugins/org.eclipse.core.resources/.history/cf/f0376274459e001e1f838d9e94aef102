@@ -1,0 +1,10 @@
+package model;
+
+public class WorkerTest {
+
+	public static void main(String[] args) {
+		Worker worker = new Worker("우영우", 30, "abc@.test.com");
+		System.out.println("이름: " + worker.getName());
+	}
+
+}

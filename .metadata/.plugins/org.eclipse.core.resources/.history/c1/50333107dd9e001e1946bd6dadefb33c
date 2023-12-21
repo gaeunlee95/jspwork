@@ -1,0 +1,31 @@
+package model;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
+
+import common.JDBCUtil;
+
+public class ProductDAO {
+	
+	Connection conn = null;
+	PreparedStatement pstmt = null;
+	ResultSet rs = null;
+	
+	//목록 보기
+	public List<Product> getProductList(){
+		List<Product> productList = new ArrayList<>();
+		//db 연결
+		conn = JDBCUtil.getConnection();
+		
+		//sql 처리
+		String sql = "select * from product";
+		
+		
+		
+		//db 종료
+		return productList;
+	}
+}

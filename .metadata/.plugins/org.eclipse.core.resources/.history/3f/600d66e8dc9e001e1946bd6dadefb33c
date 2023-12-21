@@ -1,0 +1,21 @@
+package model;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
+
+public class ProductDAO {
+	
+	Connection conn = null;
+	PreparedStatement pstmt = null;
+	ResultSet rs = null;
+	
+	//목록 보기
+	public List<Product> getProductList(){
+		List<Product> productList = new ArrayList<>();
+	
+		return productList;
+	}
+}

@@ -1,0 +1,42 @@
+package model;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+import common.JDBCUtil;
+
+public class ProductDAO {
+	
+	Connection conn = null;
+	PreparedStatement pstmt = null;
+	ResultSet rs = null;
+	
+	//목록 보기
+	public List<Product> getProductList(){
+		List<Product> productList = new ArrayList<>();
+		try {
+			//db 연결
+			conn = JDBCUtil.getConnection();
+			//sql 처리
+			String sql = "select * from product";
+			pstmt = conn.prepareStatement(sql);
+			rs = pstmt.executeQuery();
+			//레코드 추출
+			while(rs.next()) {
+				Product p = new Product();
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {	//db 종료
+			JDBCUtil.close(conn, pstmt, rs);
+		}
+		
+		
+		//db 종료
+		return productList;
+	}
+}

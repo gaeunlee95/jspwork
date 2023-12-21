@@ -1,0 +1,23 @@
+package voter;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
+public class VoterDAO {
+	Connection conn = null;         //db 연결 및 종료
+	PreparedStatement pstmt = null; //sql 처리
+	ResultSet rs = null;            //검색한 데이터셋
+
+	//좋아요 추가
+	
+	
+	//좋아요 삭제
+	
+	
+	//좋아요 저장 
+	
+	
+	//좋아요 총갯수
+
+}

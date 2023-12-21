@@ -1,0 +1,14 @@
+package voter;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
+public class VoterDAO {
+	Connection conn = null;         //db 연결 및 종료
+	PreparedStatement pstmt = null; //sql 처리
+	ResultSet rs = null;            //검색한 데이터셋
+
+
+
+}

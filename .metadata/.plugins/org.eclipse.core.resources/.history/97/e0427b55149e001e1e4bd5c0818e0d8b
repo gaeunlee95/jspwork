@@ -1,0 +1,8 @@
+package voter;
+
+public class Voter {
+	private int vno;
+	private int bno;
+	private String mid;
+	
+}

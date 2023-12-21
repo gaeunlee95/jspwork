@@ -1,0 +1,16 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>JSTL 에제</title>
+</head>
+<body>
+ <!-- el언어 -->
+	${10*3}
+	<!-- 조건문 사용 -->
+		
+</body>
+</html>
